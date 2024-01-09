@@ -1,0 +1,28 @@
+.footer {
+  padding: 30px;
+  border-top: 1px solid #000;
+}
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info {
+    display: flex; 
+    flex-direction: column;
+}
+.footer__title-info {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.footer__link {
+    margin:5px 0;
+    color: rgb(138, 80, 14);
+}
+.footer__phone-namber {
+}
+.footer__social-wrap {
+    display: flex;
+    justify-content: space-around;
+    
+}

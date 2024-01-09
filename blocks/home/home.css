@@ -1,0 +1,226 @@
+
+.preview {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(/img/dog-bg.jpg);
+    background-size: cover;
+    background-position:50% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.preview__title {
+    text-align: center;
+    color: rgb(81, 45, 2);
+    font-weight: bold;
+    font-size: 40px;
+    width: 60%;
+}
+.preview__link {
+    background-color: rgb(255, 251, 245);
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color:#00042a;
+}
+
+.info {
+    margin: 30px 0;
+    background-image: url(../../img/cat-bg.jpeg);
+    background-position:50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+}
+.info__items {
+    background: rgba(53, 53, 53, 0.668);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.info__item {
+    margin: 20px;
+}
+.info__title {
+    color: rgb(84, 53, 15);
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.info__text {
+    color:#fff;
+}
+
+
+.product__cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product__title{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
+}
+.product-card {
+    border: 1px solid rgb(250, 241, 230);
+    padding: 20px;
+    text-align: center;
+    max-width: 23%; /* Добавим максимальную ширину для адаптивности */
+    box-sizing: border-box;
+    margin: 10px; /* Добавим отступ между карточками */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+
+button {
+    background-color: rgb(84, 53, 15);
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: none;
+    box-shadow: none;
+    border-radius: 5px;
+    color:rgb(250, 241, 230);
+    margin-top:10px ;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    color:rgb(250, 241, 230);
+    background-color: rgba(84, 53, 15, 0.736);
+}
+.conteiner-link{
+    text-align: center;
+    margin: 45px 0;
+}
+
+.product__link{
+    background-color: rgb(255, 251, 245);
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color:#00042a;
+    
+}
+/* Ваш существующий CSS код */
+
+/* Добавьте стили для модального окна */
+/* Ваши текущие стили */
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/* Стили для контента внутри модального окна */
+#modalProductImage {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#modalProductName {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#modalProductDescription {
+    margin-bottom: 15px;
+}
+
+#modalProductPrice {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#quantity {
+    width: 50px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+#addToCartBtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#addToCartBtn:hover {
+    background-color: #45a049;
+}
+
+/* Добавьте адаптивные стили по необходимости */
+
+
+
+/* Адаптивные стили для экранов с максимальной шириной 600px */
+@media (max-width: 600px) {
+    
+.product__cards {
+        /* Отображаем карточки в столбце на узких экранах */
+    }
+
+    .product-card {
+        max-width: 47%; /* Убираем горизонтальные отступы между карточками */
+    }
+}
